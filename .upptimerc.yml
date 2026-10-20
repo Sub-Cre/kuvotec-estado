@@ -1,31 +1,78 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: Sub-Cre
+repo: kuvotec-estado
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Página principal
+    url: https://kuvotecacademy.com
+  - name: Aula de alumnos
+    url: https://aula.kuvotecacademy.com/login
+  - name: Servidor del aula
+    url: https://aula.kuvotecacademy.com/api/version
+
+# Cuando una web se cae, Upptime abre un "issue" y GitHub te avisa por correo.
+assignees:
+  - Sub-Cre
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /kuvotec-estado
+  name: Estado de KuvoTec
+  introTitle: "Estado de las plataformas de KuvoTec"
+  introMessage: Si alguna web aparece caída, ya estamos trabajando para solucionarlo.
   navbar:
-    - title: Status
+    - title: Estado
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: KuvoTec
+      href: https://kuvotecacademy.com
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+i18n:
+  activeIncidents: Incidentes activos
+  allSystemsOperational: Todos los sistemas funcionan
+  incidentReport: "Incidente #$NUMBER →"
+  activeIncidentSummary: Abierto el $DATE con $POSTS publicaciones
+  incidentTitle: Detalles del incidente $NUMBER
+  incidentDetails: Detalles del incidente
+  incidentFixed: Solucionado
+  incidentOngoing: En curso
+  incidentOpenedAt: Abierto el
+  incidentClosedAt: Cerrado el
+  incidentSubscribe: Suscribirse a novedades
+  incidentViewOnGitHub: Ver en GitHub
+  incidentCommentSummary: Publicado el $DATE por $AUTHOR
+  incidentBack: ← Volver a todos los incidentes
+  pastIncidents: Incidentes anteriores
+  pastIncidentsResolved: Resuelto en $MINUTES minutos con $POSTS publicaciones
+  liveStatus: En vivo
+  overallUptime: "Disponibilidad total: $UPTIME"
+  overallUptimeTitle: Disponibilidad total
+  averageResponseTime: "Tiempo de respuesta promedio: $TIMEms"
+  averageResponseTimeTitle: Tiempo de respuesta promedio
+  sevelDayResponseTime: Tiempo de respuesta de 7 días
+  responseTimeMs: Tiempo de respuesta (ms)
+  up: Funciona
+  down: Caída
+  degraded: Lenta
+  ms: ms
+  loading: Cargando
+  navGitHub: GitHub
+  footer: Esta página es de código abierto, con [Upptime](https://upptime.js.org).
+  rateLimitExceededTitle: Límite de consultas superado
+  rateLimitExceededIntro: Se superó el límite de consultas a la API de GitHub. Espera unos minutos.
+  rateLimitExceededWhatDoesErrorMean: ¿Qué significa este error?
+  rateLimitExceededErrorMeaning: Esta página usa la API de GitHub, que limita las consultas por hora.
+  rateLimitExceededErrorHowCanFix: ¿Cómo lo soluciono?
+  rateLimitExceededErrorFix: Espera una hora o agrega una clave personal de GitHub.
+  rateLimitExceededGeneratePAT: Más información
+  errorTitle: Ocurrió un error
+  errorIntro: Hubo un problema al cargar el estado más reciente.
+  errorText: Intenta de nuevo en un rato.
+  errorHome: Ir al inicio
+  pastScheduledMaintenance: Mantenimientos anteriores
+  scheduledMaintenance: Mantenimiento programado
+  scheduledMaintenanceSummaryStarted: Empezó el $DATE y dura $DURATION minutos
+  scheduledMaintenanceSummaryStarts: Empieza el $DATE y dura $DURATION minutos
+  startedAt: Empezó el
+  startsAt: Empieza el
+  duration: Duración
+  durationMin: $DURATION minutos
+  incidentCompleted: Terminado
+  incidentScheduled: Programado
